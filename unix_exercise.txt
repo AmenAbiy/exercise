@@ -1,0 +1,724 @@
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop
+$ git clone https://github.com/AmenAbiy/exercise
+Cloning into 'exercise'...
+warning: You appear to have cloned an empty repository.
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop
+$ cd exercise/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ ls
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ vim .txt
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ vim bio.txt
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ cat bio.txt
+Abiy Mengesha
+
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ git add .
+warning: in the working copy of 'bio.txt', LF will be replaced by CRLtime Git touches it
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ git commit -m "added txt"
+[main (root-commit) b0e663c] added txt
+ 1 file changed, 2 insertions(+)
+ create mode 100644 bio.txt
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 227 bytes | 227.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AmenAbiy/exercise
+ * [new branch]      main -> main
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ git clone https://github.com/Revature-Training-1302/exercises/tree/main/week1/unix_exercise
+Cloning into 'unix_exercise'...
+fatal: repository 'https://github.com/Revature-Training-1302/exercises/tree/main/week1/unix_exercise/' not found
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ ls
+bio.txt
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ git clone https://github.com/Revature-Training-1302/exercises.git
+Cloning into 'exercises'...
+remote: Enumerating objects: 54, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 54 (delta 2), reused 19 (delta 1), pack-reused 34
+Receiving objects: 100% (54/54), 6.59 KiB | 6.59 MiB/s, done.
+Resolving deltas: 100% (6/6), done.
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ ls
+bio.txt  exercises/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ cd exercises/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises (main)
+$ ls
+dummy_file  week1/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises (main)
+$ cd week1/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1 (main)
+$ ls
+8.2.md                    git-exercise.md      unix_exercise/
+class-object-exercise.md  grading-exercise.md
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1 (main)
+$ cd unix_exercise/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise (main)
+$ ls
+chest/  house/  instructions.txt
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise (main)
+$ cd house/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house (main)
+$ ls
+basement/  floor0/  floor1/  floor2/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house (main)
+$ cd basement/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/basement (main)
+$ ls
+laundry-room/  storage/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/basement (main)
+$ cd laundry-room/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/basement/laundry-room (main)
+$ ls
+clothes  dryer  drying-rack  soap  trash1  trash2  treasure1  washer
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/basement/laundry-room (main)
+$ rm tr
+trash1     trash2     treasure1
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/basement/laundry-room (main)
+$ rm trash*
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/basement/laundry-room (main)
+$ ls
+clothes  dryer  drying-rack  soap  treasure1  washer
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/basement/laundry-room (main)
+$ mv treasure1 ../../../chest/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/basement/laundry-room (main)
+$ ls
+clothes  dryer  drying-rack  soap  washer
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/basement/laundry-room (main)
+$ cd ../
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/basement (main)
+$ ls
+laundry-room/  storage/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/basement (main)
+$ cd storage/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/basement/storage (main)
+$ ls
+bicycle  trash3  treasure2
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/basement/storage (main)
+$ rm trash3
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/basement/storage (main)
+$ mv treasure2 ../../../chest/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/basement/storage (main)
+$ ls
+bicycle
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/basement/storage (main)
+$ cd ../../../house/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house (main)
+$ ls
+basement/  floor0/  floor1/  floor2/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house (main)
+$ cd floor0
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0 (main)
+$ ls
+bathroom/  kitchen/  living-room/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0 (main)
+$ cd bathroom/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/bathroom (main)
+$ ls
+cabinet/  mat  mirror
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/bathroom (main)
+$ cd cabinet/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/bathroom/cabinet (main)
+$ ls
+3  brush  comb  shampoo  soap  toothbrush  toothpaste  trasure
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/bathroom/cabinet (main)
+$ mv trasure ../../../../chest/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/bathroom/cabinet (main)
+$ cd ../
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/bathroom (main)
+$ ls
+cabinet/  mat  mirror
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/bathroom (main)
+$ cd ../
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0 (main)
+$ ls
+bathroom/  kitchen/  living-room/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0 (main)
+$ cd kitchen/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen (main)
+$ ls
+fridge/  oven/  pantry/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen (main)
+$ cd fridge/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen/fridge (main)
+$ ls
+bread    chicken  juice  soda    trash5
+carrots  eggs     milk   trash4  trasure4
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen/fridge (main)
+$ rm trash*
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen/fridge (main)
+$ ls
+bread  carrots  chicken  eggs  juice  milk  soda  trasure4
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen/fridge (main)
+$ mv trasure4 ../../../../chest/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen/fridge (main)
+$ cd ../
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen (main)
+$ ls
+fridge/  oven/  pantry/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen (main)
+$ cd oven
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen/oven (main)
+$ ls
+chicken-roast
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen/oven (main)
+$ cd ../
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen (main)
+$ ls
+fridge/  oven/  pantry/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen (main)
+$ cd pantry/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen/pantry (main)
+$ ls
+cereal  chips  cookies  crackers  trash6
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen/pantry (main)
+$ rm trash6
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen/pantry (main)
+$ cd ../
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen (main)
+$ ls
+fridge/  oven/  pantry/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/kitchen (main)
+$ cd ../
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0 (main)
+$ ls
+bathroom/  kitchen/  living-room/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0 (main)
+$ cd living-room/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/living-room (main)
+$ ls
+TV  bookshelf/  chair  couch  table
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/living-room (main)
+$ cd bookshelf/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/living-room/bookshelf (main)
+$ ls
+animal-farm  harry-potter  it  lord-of-the-rings  trash7  trasure5
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/living-room/bookshelf (main)
+$ rm trash7
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/living-room/bookshelf (main)
+$ mv trasure5 ../../../../chest/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/living-room/bookshelf (main)
+$ ls
+animal-farm  harry-potter  it  lord-of-the-rings
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/living-room/bookshelf (main)
+$ cd ../
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/living-room (main)
+$ ls
+TV  bookshelf/  chair  couch  table
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0/living-room (main)
+$ cd ../
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0 (main)
+$ ls
+bathroom/  kitchen/  living-room/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor0 (main)
+$ cd ../
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house (main)
+$ ls
+basement/  floor0/  floor1/  floor2/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house (main)
+$ floor1
+bash: floor1: command not found
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house (main)
+$ ls
+basement/  floor0/  floor1/  floor2/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house (main)
+$ cd floor1
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1 (main)
+$ ls
+balcony/  bathroom/  bedroom1/  bedroom2/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1 (main)
+$ cd ba
+balcony/  bathroom/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1 (main)
+$ cd balcony/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/balcony (main)
+$ ls
+chair  plant  trash10  trash11
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/balcony (main)
+$ rm trash1*
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/balcony (main)
+$ ls
+chair  plant
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/balcony (main)
+$ cd ../
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1 (main)
+$ ls
+balcony/  bathroom/  bedroom1/  bedroom2/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1 (main)
+$ cd bathroom/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bathroom (main)
+$ ls
+sink  toilet  tub
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bathroom (main)
+$ cd ../bedroom1
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom1 (main)
+$ ls
+TV  bed  closet/  dresser/  toy-chest/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom1 (main)
+$ cd closet/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom1/closet (main)
+$ ls
+board-game  toy  trash8  trash9
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom1/closet (main)
+$ rm trash*
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom1/closet (main)
+$ cd ../dresser/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom1/dresser (main)
+$ ls
+pants  shirt  socks
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom1/dresser (main)
+$ cd ../toy-chest/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom1/toy-chest (main)
+$ ls
+car  cow  dinosaur  space-ship  trasure6  truck
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom1/toy-chest (main)
+$ mv trasure6 ../../../../chest/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom1/toy-chest (main)
+$ cd ../../bedroom2
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom2 (main)
+$ ls
+bed  closet/  desk  mirror
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom2 (main)
+$ cd closet/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom2/closet (main)
+$ ls
+suit  tie  treasure7
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom2/closet (main)
+$ mv treasure7 ../../../../chest/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom2/closet (main)
+$ cd ../
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom2 (main)
+$ ls
+bed  closet/  desk  mirror
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1/bedroom2 (main)
+$ cd ../
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1 (main)
+$ ls
+balcony/  bathroom/  bedroom1/  bedroom2/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor1 (main)
+$ cd ../
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house (main)
+$ ls
+basement/  floor0/  floor1/  floor2/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house (main)
+$ cd floor2
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2 (main)
+$ ls
+storage/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2 (main)
+$ cd storage/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ vim ../../../../../../../exercise/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ vim treasurehunt.txt
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ cat treasurehunt.txt
+All treasures hunted and trash cleaned
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ git add exercise
+fatal: pathspec 'exercise' did not match any files
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ git add .
+warning: in the working copy of 'week1/unix_exercise/house/floor2/storage/treasurehunt.txt', LF will be replaced by CRLF the next time Git touches it
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ git commit -m "Treasures hunted and trash cleaned"
+[main 65e9bba] Treasures hunted and trash cleaned
+ 1 file changed, 1 insertion(+)
+ create mode 100644 week1/unix_exercise/house/floor2/storage/treasurehunt.txt
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../../basement/laundry-room/trash1
+        deleted:    ../../basement/laundry-room/trash2
+        deleted:    ../../basement/laundry-room/treasure1
+        deleted:    ../../basement/storage/trash3
+        deleted:    ../../basement/storage/treasure2
+        deleted:    ../../floor0/bathroom/cabinet/trasure
+        deleted:    ../../floor0/kitchen/fridge/trash4
+        deleted:    ../../floor0/kitchen/fridge/trash5
+        deleted:    ../../floor0/kitchen/fridge/trasure4
+        deleted:    ../../floor0/kitchen/pantry/trash6
+        deleted:    ../../floor0/living-room/bookshelf/trash7
+        deleted:    ../../floor0/living-room/bookshelf/trasure5
+        deleted:    ../../floor1/balcony/trash10
+        deleted:    ../../floor1/balcony/trash11
+        deleted:    ../../floor1/bedroom1/closet/trash8
+        deleted:    ../../floor1/bedroom1/closet/trash9
+        deleted:    ../../floor1/bedroom1/toy-chest/trasure6
+        deleted:    ../../floor1/bedroom2/closet/treasure7
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../../chest/trasure
+        ../../../chest/trasure4
+        ../../../chest/trasure5
+        ../../../chest/trasure6
+        ../../../chest/treasure1
+        ../../../chest/treasure2
+        ../../../chest/treasure7
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ git push
+remote: Permission to Revature-Training-1302/exercises.git denied to AmenAbiy.
+fatal: unable to access 'https://github.com/Revature-Training-1302/exercises.git/': The requested URL returned error: 403
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ git clone https://github.com/AmenAbiy/exercise.git
+Cloning into 'exercise'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ git commit -m "Treasure's hunt added"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../../basement/laundry-room/trash1
+        deleted:    ../../basement/laundry-room/trash2
+        deleted:    ../../basement/laundry-room/treasure1
+        deleted:    ../../basement/storage/trash3
+        deleted:    ../../basement/storage/treasure2
+        deleted:    ../../floor0/bathroom/cabinet/trasure
+        deleted:    ../../floor0/kitchen/fridge/trash4
+        deleted:    ../../floor0/kitchen/fridge/trash5
+        deleted:    ../../floor0/kitchen/fridge/trasure4
+        deleted:    ../../floor0/kitchen/pantry/trash6
+        deleted:    ../../floor0/living-room/bookshelf/trash7
+        deleted:    ../../floor0/living-room/bookshelf/trasure5
+        deleted:    ../../floor1/balcony/trash10
+        deleted:    ../../floor1/balcony/trash11
+        deleted:    ../../floor1/bedroom1/closet/trash8
+        deleted:    ../../floor1/bedroom1/closet/trash9
+        deleted:    ../../floor1/bedroom1/toy-chest/trasure6
+        deleted:    ../../floor1/bedroom2/closet/treasure7
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../../chest/trasure
+        ../../../chest/trasure4
+        ../../../chest/trasure5
+        ../../../chest/trasure6
+        ../../../chest/treasure1
+        ../../../chest/treasure2
+        ../../../chest/treasure7
+        exercise/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ git push
+remote: Permission to Revature-Training-1302/exercises.git denied to AmenAbiy.
+fatal: unable to access 'https://github.com/Revature-Training-1302/exercises.git/': The requested URL returned error: 403
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ git clone https://github.com/AmenAbiy/exercise
+fatal: destination path 'exercise' already exists and is not an empty directory.
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ git add .
+warning: adding embedded git repository: week1/unix_exercise/house/floor2/storage/exercise
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> week1/unix_exercise/house/floor2/storage/exercise
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached week1/unix_exercise/house/floor2/storage/exercise
+hint:
+hint: See "git help submodule" for more information.
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ ls
+box1/  box2/  box3/  exercise/  treasurehunt.txt
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   exercise
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../../basement/laundry-room/trash1
+        deleted:    ../../basement/laundry-room/trash2
+        deleted:    ../../basement/laundry-room/treasure1
+        deleted:    ../../basement/storage/trash3
+        deleted:    ../../basement/storage/treasure2
+        deleted:    ../../floor0/bathroom/cabinet/trasure
+        deleted:    ../../floor0/kitchen/fridge/trash4
+        deleted:    ../../floor0/kitchen/fridge/trash5
+        deleted:    ../../floor0/kitchen/fridge/trasure4
+        deleted:    ../../floor0/kitchen/pantry/trash6
+        deleted:    ../../floor0/living-room/bookshelf/trash7
+        deleted:    ../../floor0/living-room/bookshelf/trasure5
+        deleted:    ../../floor1/balcony/trash10
+        deleted:    ../../floor1/balcony/trash11
+        deleted:    ../../floor1/bedroom1/closet/trash8
+        deleted:    ../../floor1/bedroom1/closet/trash9
+        deleted:    ../../floor1/bedroom1/toy-chest/trasure6
+        deleted:    ../../floor1/bedroom2/closet/treasure7
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../../chest/trasure
+        ../../../chest/trasure4
+        ../../../chest/trasure5
+        ../../../chest/trasure6
+        ../../../chest/treasure1
+        ../../../chest/treasure2
+        ../../../chest/treasure7
+
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ git commit -m "treasure hunt added"
+[main bcaec2b] treasure hunt added
+ 1 file changed, 1 insertion(+)
+ create mode 160000 week1/unix_exercise/house/floor2/storage/exercise
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ git push
+remote: Permission to Revature-Training-1302/exercises.git denied to AmenAbiy.
+fatal: unable to access 'https://github.com/Revature-Training-1302/exercises.git/': The requested URL returned error: 403
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ git clone https://github.com/AmenAbiy/exercise
+fatal: destination path 'exercise' already exists and is not an empty directory.
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ ls
+box1/  box2/  box3/  exercise/  treasurehunt.txt
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises/week1/unix_exercise/house/floor2/storage (main)
+$ cd ../../../../../../../exercise/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ git add .
+warning: adding embedded git repository: exercises
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> exercises
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached exercises
+hint:
+hint: See "git help submodule" for more information.
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ git commit -m "Treasures added to chest"
+[main 691db58] Treasures added to chest
+ 1 file changed, 1 insertion(+)
+ create mode 160000 exercises
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   exercises (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 280 bytes | 280.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AmenAbiy/exercise
+   b0e663c..691db58  main -> main
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ vim exercises/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ ls
+bio.txt  exercises/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise (main)
+$ cd exercises/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises (main)
+$ ls
+dummy_file  week1/
+
+abiym@Jasmachine MINGW64 ~/OneDrive/Desktop/exercise/exercises (main)
+$
